@@ -1,7 +1,7 @@
-[Programação Paralela](https://github.com/AndreaInfUFSM/elc139-2016a) > T1
+[Programação Paralela](https://github.com/AndreaInfUFSM/elc139-2016a) > Trabalhos
 
-TOP500 & me: Comparativo de Arquiteturas Paralelas
---------------------------------------------------
+T1: TOP500 & me - Comparativo de Arquiteturas Paralelas
+-------------------------------------------------------
 
 1. Antes de começar, faça um fork no GitHub do repositório da disciplina, pois você vai entregar o trabalho no seu repositório.
 2. Seu objetivo vai ser preencher uma tabela comparativa entre um supercomputador do [TOP500](http://top500.org) e um computador que você possa usar para fazer alguns trabalhos da disciplina e que tenha uma arquitetura paralela (p.ex.: seu notebook ou desktop com processador multicore, servidor do NCC, etc.)
