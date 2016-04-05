@@ -43,6 +43,7 @@ void *dotprod_worker(void *arg)
    }
 
    pthread_mutex_lock (&mutexsum);
+   printf ("soma : %lf", mysum);
    dotdata.c += mysum;
    pthread_mutex_unlock (&mutexsum);
 
