@@ -9,9 +9,9 @@ Pthreads
 
 1 - Particionamento:
 
-   int wsize = dotdata.wsize;
-   int start = offset*wsize;
-   int end = start + wsize;
+   		int wsize = dotdata.wsize;
+   		int start = offset*wsize;
+   		int end = start + wsize;
 
 Consiste nas divisões do vetor onde as threads podem trabalhar. Cada thread possui um start e um end diferente para previnir conflitos entre os dados.
 
@@ -26,17 +26,17 @@ Aglomeração:
 
 	dotdata.c += mysum;
 
-	Junção das somas para realizar as somas parciais. No código, cada thread acrescenta sua variável a dotdata.c.
+Junção das somas para realizar as somas parciais. No código, cada thread acrescenta sua variável a dotdata.c.
 
 
 Mapeamento: 
 	
 	for (i = 0; i < nthreads; i++) {
-      pthread_create(&threads[i], &attr, dotprod_worker, (void *) i);
-   }
+      pthread_create(&threads[i], &attr, dotprod_worker, (void *) i);}
 	for (i = 0; i < nthreads; i++) {
-      pthread_join(threads[i], NULL);
-   }
+      pthread_join(threads[i], NULL);   }
+
+Etapa de criação das threads, bem como sua junção posteriormente. 
 
 
 
