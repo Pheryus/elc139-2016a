@@ -17,8 +17,8 @@ Consiste nas divisões do vetor onde as threads podem trabalhar. Cada thread pos
 
 Comunicação:
 
-   pthread_mutex_lock (&mutexsum);
-   pthread_mutex_unlock (&mutexsum);
+   		pthread_mutex_lock (&mutexsum);
+   		pthread_mutex_unlock (&mutexsum);
 
 Satisfaz as dependências de atualizações nas variáveis em nível multithread. No caso dot_prod, os mutex geram exclusões mútuas para que somente uma thread por vez possa alterar o valor da variável dotdata.c.
 
